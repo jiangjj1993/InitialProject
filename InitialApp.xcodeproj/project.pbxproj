@@ -12,7 +12,6 @@
 		03A1E8ED20F6FBD200EDA681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A1E8EC20F6FBD200EDA681 /* Assets.xcassets */; };
 		03A1E8F320F6FBD200EDA681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A1E8F220F6FBD200EDA681 /* main.m */; };
 		03A1E8FC20F7342B00EDA681 /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A1E8FB20F7342B00EDA681 /* AppDelegate+AppService.m */; };
-		03A1E90620F7572800EDA681 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A1E90520F7572800EDA681 /* Default-568h@2x.png */; };
 		03A1E90C20F75C7100EDA681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A1E90820F75C7100EDA681 /* LaunchScreen.storyboard */; };
 		03A1E90F20F75CC000EDA681 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A1E90E20F75CC000EDA681 /* Info.plist */; };
 		DF55AB96BBF5FF7BCFE7DB05 /* libPods-InitialApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 094BEB720F1202BB80AF20F1 /* libPods-InitialApp.a */; };
@@ -33,7 +32,6 @@
 		03A1E90220F7569800EDA681 /* FontAndColorMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAndColorMacros.h; sourceTree = "<group>"; };
 		03A1E90320F756A800EDA681 /* CommonMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
 		03A1E90420F756BA00EDA681 /* URLMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLMacros.h; sourceTree = "<group>"; };
-		03A1E90520F7572800EDA681 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		03A1E90920F75C7100EDA681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03A1E90E20F75CC000EDA681 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		094BEB720F1202BB80AF20F1 /* libPods-InitialApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InitialApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +54,6 @@
 		03A1E8D720F6FBD100EDA681 = {
 			isa = PBXGroup;
 			children = (
-				03A1E90520F7572800EDA681 /* Default-568h@2x.png */,
 				03A1E8E220F6FBD100EDA681 /* InitialApp */,
 				03A1E8E120F6FBD100EDA681 /* Products */,
 				D1BB57899AA646950EC17419 /* Pods */,
@@ -203,7 +200,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A1E90F20F75CC000EDA681 /* Info.plist in Resources */,
-				03A1E90620F7572800EDA681 /* Default-568h@2x.png in Resources */,
 				03A1E8ED20F6FBD200EDA681 /* Assets.xcassets in Resources */,
 				03A1E90C20F75C7100EDA681 /* LaunchScreen.storyboard in Resources */,
 			);
