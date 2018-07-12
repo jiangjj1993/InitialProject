@@ -1,0 +1,13 @@
+//
+//  CommonMacros.h
+//  InitialApp
+//
+//  Created by 姜－pc on 2018/7/12.
+//  Copyright © 2018年 姜－pc. All rights reserved.
+//
+
+#ifndef CommonMacros_h
+#define CommonMacros_h
+
+
+#endif /* CommonMacros_h */
