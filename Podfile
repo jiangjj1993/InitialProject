@@ -7,7 +7,6 @@ pod 'MBProgressHUD'
 pod 'Masonry'
 pod 'SDWebImage'
 pod 'IQKeyboardManager'
-pod 'YYModel'
+pod 'YYKit'
 pod 'WRNavigationBar'
-pod 'SAMKeychain'
 end
