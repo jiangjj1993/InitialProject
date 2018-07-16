@@ -22,6 +22,11 @@
 //监听网络状态
 - (void)monitorNetworkStatus;
 
+//初始化Bugly --腾讯异常上报功能
+-(void)initBugly;
+
+
+
 //单例
 + (AppDelegate *)shareAppDelegate;
 

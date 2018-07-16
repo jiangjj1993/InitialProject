@@ -19,10 +19,10 @@
     //                                               object:nil];
     //
     //    //网络状态监听
-    //    [[NSNotificationCenter defaultCenter] addObserver:self
-    //                                             selector:@selector(netWorkStateChange:)
-    //                                                 name:KNotificationNetWorkStateChange
-    //                                               object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(netWorkStateChange:)
+                                                     name:KNotificationNetWorkStateChange
+                                                   object:nil];
 }
 
 #pragma mark ————— 初始化window —————
@@ -142,31 +142,38 @@
 #pragma mark ————— 网络状态监听 —————
 - (void)monitorNetworkStatus
 {
-    // 网络状态改变一次, networkStatusWithBlock就会响应一次
-    //    [PPNetworkHelper networkStatusWithBlock:^(PPNetworkStatusType networkStatus) {
-    //
-    //        switch (networkStatus) {
-    //                // 未知网络
-    //            case PPNetworkStatusUnknown:
-    //                DLog(@"网络环境：未知网络");
-    //                // 无网络
-    //            case PPNetworkStatusNotReachable:
-    //                DLog(@"网络环境：无网络");
-    //                KPostNotification(KNotificationNetWorkStateChange, @NO);
-    //                break;
-    //                // 手机网络
-    //            case PPNetworkStatusReachableViaWWAN:
-    //                DLog(@"网络环境：手机自带网络");
-    //                // 无线网络
-    //            case PPNetworkStatusReachableViaWiFi:
-    //                DLog(@"网络环境：WiFi");
-    //                KPostNotification(KNotificationNetWorkStateChange, @YES);
-    //                break;
-    //        }
-    //
-    //    }];
+     //网络状态改变一次, networkStatusWithBlock就会响应一次
+        [PPNetworkHelper networkStatusWithBlock:^(PPNetworkStatusType networkStatus) {
+    
+            switch (networkStatus) {
+                    // 未知网络
+                case PPNetworkStatusUnknown:
+                    DLog(@"网络环境：未知网络");
+                    // 无网络
+                case PPNetworkStatusNotReachable:
+                    DLog(@"网络环境：无网络");
+                    KPostNotification(KNotificationNetWorkStateChange, @NO);
+                    break;
+                    // 手机网络
+                case PPNetworkStatusReachableViaWWAN:
+                    DLog(@"网络环境：手机自带网络");
+                    // 无线网络
+                case PPNetworkStatusReachableViaWiFi:
+                    DLog(@"网络环境：WiFi");
+                    KPostNotification(KNotificationNetWorkStateChange, @YES);
+                    break;
+            }
+    
+        }];
     
 }
+
+#pragma mark ----------  异常上报    -------------
+-(void)initBugly {
+    [Bugly startWithAppId:BuglyAppID];
+}
+
+
 
 + (AppDelegate *)shareAppDelegate{
     return (AppDelegate *)[[UIApplication sharedApplication] delegate];

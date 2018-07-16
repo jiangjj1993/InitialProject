@@ -9,4 +9,5 @@ pod 'SDWebImage'
 pod 'IQKeyboardManager'
 pod 'YYKit'
 pod 'WRNavigationBar'
+pod 'Bugly'
 end

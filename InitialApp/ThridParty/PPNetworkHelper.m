@@ -74,7 +74,7 @@ static AFHTTPSessionManager *_sessionManager;
 
 + (void)cancelAllRequest {
     // 锁操作
-    @synchronized(self) {
+    @synchronized(self) { 
         [[self allSessionTask] enumerateObjectsUsingBlock:^(NSURLSessionTask  *_Nonnull task, NSUInteger idx, BOOL * _Nonnull stop) {
             [task cancel];
         }];
