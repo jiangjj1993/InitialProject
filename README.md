@@ -1,12 +1,12 @@
-# InitialProject
+# InitialProject #
 用于快速搭建一个IOS空项目，预先封好网络框架，基类，工具库，分割出登录模块，修修
 就能用了
 
-## 简介
+## 简介 ##
 `InitialProject`是基于MVC架构的iOS轻量级框架，封装了各种基类、基于PPNetwork的网
 络服务、工具库
 
-## iOS 搭建高可用App框架
+## iOS 搭建高可用App框架 ##
 
 进入到新公司开始着手搭建APP框架，一直以来都是为了完成快速完成项目而草草的创建一
 个工程，中途需要用到什么库就去集成什么库，导致架构松散，底层混乱，缺少规范，一直
@@ -14,16 +14,16 @@
 在翻阅了众多github的开源项目后选择参照UniversalProject来搭建自己的项目框架，该框
 架优点：轻量小巧、层级清晰，易维护、易扩展。
 
-## 架构图：
+## 架构图：##
 
 <div align=center><img src="http://git.zhiqi.cn/junjie/images/raw/e4a4c419f04d45
 ff916829e974ad9871f3187456/WechatIMG20641.jpeg"/></div>
+架构原则：易读性、易维护性、易扩展性。  
 
-架构原则：易读性、易维护性、易扩展性。
 
-## 一、项目技术选型
+## 一、项目技术选型 ##
 
-### 1. 网络框架
+1.网络框架
 
 选择AFNetworking作为基础网络框架。AFNetWorking一款轻量级网络请求开源框架，基于
 iOS和mac os网络进行扩展的高性能框架，大大降低了iOS开发工程师处理网络请求的难度。
@@ -41,7 +41,7 @@ GitHub地址：https://github.com/jkpang/PPNetworkHelper
 体项目进行修改）里的样式。也可以在这一层里对所有的请求进行拦截，如
 JsonResult.code == 1,token失效，让页面跳转到登录页等。
 
-### 2. 基础组件库
+2.基础组件库
 
 功能强大，性能优秀的——YYKit  
 
@@ -82,42 +82,35 @@ target="_blank" rel="nofollow">YYWebImage</a>— 这个高性能异步图像加�
 点过时，因为其使用的是NSURLConnection请求，而SDWebImage已替换成了URLSession。所
 以图像异步加载上，我还是选择更加专业的SDWebImage。
 
-### 3. 上下拉刷新框架
+3.上下拉刷新框架
 
 大部分应用都会有TableView或CollectionView，上下拉刷新是比较常用的，MJRefresh提供
 的功能比较强大，支持自定义，提供样式齐全，更新及时。
 
-### 4. Toast提示
+4.Toast提示
 
 比较主流的两款Toast提示框架可供选择，分别是 MBProgressHUD 和 SVProgressHUD，二者
 更新都比较及时，功能也都类似，根据个人习惯了，选择哪个不重要，重要的是要对其二次
 封装，让它变得更好用，框架中封装了一个MBProgressHUD+XY的category，类方法的形式调用。
 
-### 5. 锚点及崩溃信息
+5.锚点及崩溃信息
 
 该框架里我使用了腾讯出品的Bugly，功能和友盟等比起来比较单一，但胜在小巧和使用便捷,  
 `注意：去ThirdMacros.h里修改相应的AppID`
 
 关于其他框架的选择，首先要了解他们的优缺点，本着符合自身且维护及时的宗旨去选择。
 
-## 二、搭建目录结构
-
-<div align=center><img src="http://git.zhiqi.cn/junjie/images/raw/master
+## 二、搭建目录结构 ##
+<img src="http://git.zhiqi.cn/junjie/images/raw/master
 /mulujiegou.jpeg"  width="30%"/>
-            目录图解
-</div>
 
 如上图，App目录结构从下到上，使用Pods管理第三方框架，将第三方框架
 进行二次封装，供给顶层使用，尽可能减少各模块之间的耦合度，只为更清晰。
 
+## 三、封装基础类 ##
 
-## 三、封装基础类
-
-<div align=center><img src="http://git.zhiqi.cn/junjie/images/raw/master/
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/
 appDelegate.jpg"  width="30%"/>
-            1.应用入口
-</div>
-
 AppDelegate是应用的代理，应用级的事件都委托它处理，为了利于阅读和维护新增了一
 个AppDelegate+AppService类别，用来处理生命周期之外的业务，AppDelegate作为事件入
 口，具体实现直接调用类别里的方法。
