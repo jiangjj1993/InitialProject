@@ -23,7 +23,7 @@ ff916829e974ad9871f3187456/WechatIMG20641.jpeg"/></div>
 
 ## 一、项目技术选型
 
-1. 网络框架
+### 1. 网络框架
 
 选择AFNetworking作为基础网络框架。AFNetWorking一款轻量级网络请求开源框架，基于
 iOS和mac os网络进行扩展的高性能框架，大大降低了iOS开发工程师处理网络请求的难度。
@@ -41,7 +41,7 @@ GitHub地址：https://github.com/jkpang/PPNetworkHelper
 体项目进行修改）里的样式。也可以在这一层里对所有的请求进行拦截，如
 JsonResult.code == 1,token失效，让页面跳转到登录页等。
 
-2. 基础组件库
+### 2. 基础组件库
 
 功能强大，性能优秀的——YYKit  
 
@@ -82,18 +82,18 @@ target="_blank" rel="nofollow">YYWebImage</a>— 这个高性能异步图像加�
 点过时，因为其使用的是NSURLConnection请求，而SDWebImage已替换成了URLSession。所
 以图像异步加载上，我还是选择更加专业的SDWebImage。
 
-3. 上下拉刷新框架
+### 3. 上下拉刷新框架
 
 大部分应用都会有TableView或CollectionView，上下拉刷新是比较常用的，MJRefresh提供
 的功能比较强大，支持自定义，提供样式齐全，更新及时。
 
-4. Toast提示
+### 4. Toast提示
 
 比较主流的两款Toast提示框架可供选择，分别是 MBProgressHUD 和 SVProgressHUD，二者
 更新都比较及时，功能也都类似，根据个人习惯了，选择哪个不重要，重要的是要对其二次
 封装，让它变得更好用，框架中封装了一个MBProgressHUD+XY的category，类方法的形式调用。
 
-5. 锚点及崩溃信息
+### 5. 锚点及崩溃信息
 
 该框架里我使用了腾讯出品的Bugly，功能和友盟等比起来比较单一，但胜在小巧和使用便捷,  
 `注意：去ThirdMacros.h里修改相应的AppID`
