@@ -111,12 +111,12 @@
 		03A1E8E220F6FBD100EDA681 /* InitialApp */ = {
 			isa = PBXGroup;
 			children = (
-				03A1E97820FC8BCE00EDA681 /* Manager */,
-				03A1E97620FC8B3300EDA681 /* Modules */,
-				03A1E96420F8A7AA00EDA681 /* ThridParty */,
 				03A1E94F20F8933900EDA681 /* AppDelegate */,
 				03A1E92920F8933900EDA681 /* Define */,
+				03A1E97820FC8BCE00EDA681 /* Manager */,
+				03A1E97620FC8B3300EDA681 /* Modules */,
 				03A1E94620F8933900EDA681 /* Supporting Files */,
+				03A1E96420F8A7AA00EDA681 /* ThridParty */,
 				03A1E92E20F8933900EDA681 /* Utils */,
 			);
 			path = InitialApp;
