@@ -8,11 +8,11 @@
 
 ## iOS 搭建高可用App框架 ##
 
-进入到新公司开始着手搭建APP框架，一直以来都是为了完成快速完成项目而草草的创建一
-个工程，中途需要用到什么库就去集成什么库，导致架构松散，底层混乱，缺少规范，一直
-没能形成自己的代码风格。清晰的项目结构和良好的代码规范是保证产品质量的关键，这里
-在翻阅了众多github的开源项目后选择参照UniversalProject来搭建自己的项目框架，该框
-架优点：轻量小巧、层级清晰，易维护、易扩展。
+进入到新公司开始着手搭建APP框架，一直以来都是为了完成快速完成项目而草草的创建一个
+工程，中途需要用到什么库就去集成什么库，导致架构松散，底层混乱，缺少规范，一直没能
+形成自己的代码风格。清晰的项目结构和良好的代码规范是保证产品质量的关键，这里在翻阅
+了众多github的开源项目后选择参照UniversalProject来搭建自己的项目框架，该框架优点：轻
+量小巧、层级清晰，易维护、易扩展。
 
 ## 架构图：##
 
@@ -49,34 +49,34 @@ JsonResult.code == 1,token失效，让页面跳转到登录页等。
 <a href="https://github.com/ibireme/YYModel" target
 ="_blank" rel="nofollow">YYModel</a>— 高性能的 iOS JSON 模型框架。
 
-<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYCache" target=
+<a href="https://github.com/ibireme/YYCache" target=
 "_blank" rel="nofollow">YYCache</a>— 高性能的 iOS 缓存框架。
 
-<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYImage" target=
+<a href="https://github.com/ibireme/YYImage" target=
 "_blank" rel="nofollow">YYImage</a>— 功能强大的 iOS 图像框架。
 
-<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYWebImage" 
+<a href="https://github.com/ibireme/YYWebImage" 
 target="_blank" rel="nofollow">YYWebImage</a>— 高性能的 iOS 异步图像加载框架。
 
-<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYText" target
+<a href="https://github.com/ibireme/YYText" target
 ="_blank" rel="nofollow">YYText</a>— 功能强大的 iOS 富文本框架。
 
-<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYKeyboardManager"
+<a href="https://github.com/ibireme/YYKeyboardManager"
 target="_blank" rel="nofollow">YYKeyboardManager</a>— iOS 键盘监听管理工具。
 
-<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYDispatchQueue
+<a href="https://github.com/ibireme/YYDispatchQueue
 Pool" target="_blank" rel="nofollow">YYDispatchQueuePool</a>— iOS 全局并发队列管
 理工具。
 
-<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYAsyncLayer" 
+<a href="https://github.com/ibireme/YYAsyncLayer" 
 target="_blank" rel="nofollow">YYAsyncLayer</a>— iOS 异步绘制与显示的工具。
 
-<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYCategories" 
+<a href="https://github.com/ibireme/YYCategories" 
 target="_blank" rel="nofollow">YYCategories</a>— 功能丰富的 Category 类型工具库。
 选择这个框架的原因是功能和性能都比较强大，用一个框架就可以做很多事，而且YYKit的
 设计思想是category，几乎没有入侵性，使用起来也非常方便。
 
-<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYWebImage" 
+<a href="https://github.com/ibireme/YYWebImage" 
 target="_blank" rel="nofollow">YYWebImage</a>— 这个高性能异步图像加载框架可能有
 点过时，因为其使用的是NSURLConnection请求，而SDWebImage已替换成了URLSession。所
 以图像异步加载上，我还是选择更加专业的SDWebImage。
