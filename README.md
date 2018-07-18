@@ -16,3 +16,31 @@
 <div align=center><img src="http://git.zhiqi.cn/junjie/images/raw/e4a4c419f04d45ff916829e974ad9871f3187456/WechatIMG20641.jpeg"/></div>
 
 架构原则：易读性、易维护性、易扩展性。
+
+## 一、项目技术选型
+
+1. 网络框架
+
+选择AFNetworking作为基础网络框架。AFNetWorking一款轻量级网络请求开源框架，基于iOS和mac os网络进行扩展的高性
+能框架，大大降低了iOS开发工程师处理网络请求的难度。
+
+GitHub地址：https://github.com/AFNetworking/AFNetworking
+
+在AFNetworking基础上选择PPNetworkHelper，它是对AFNetworking与YYCache的二次封装,封装常见的GET、POST、
+文件上传/下载、网络状态监测的功能、方法接口简洁明了,并结合YYCache实现对网络数据的缓存,简单易用。
+
+GitHub地址：https://github.com/jkpang/PPNetworkHelper
+
+在PPNetworkHelper基础上，我们继承它，封装出适用于自己项目的网络管理库HttpsManager，在这一层里我们与后端人员约定好
+返回的JSON格式，进行预处理，如JsonResult（根据具体项目进行修改）里的样式。也可以在这一层里对所有的请求进行拦截，如
+JsonResult.code == 1,token失效，让页面跳转到登录页等。
+
+2. 基础组件库
+
+功能强大，性能优秀的——YYKit  
+
+它包含了解析数据，缓存，图像处理，文本处理，异步绘制等组件，当然也有些瑕疵下面说
+
+<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYModel" target="_blank" rel="nofollow">YYModel</a>— 高性能的 iOS JSON 模型框架。
+
+YYCache— 高性能的 iOS 缓存框架。
