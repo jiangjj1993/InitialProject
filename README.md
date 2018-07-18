@@ -15,6 +15,7 @@
 
 ## 架构图：
 
-<div align=center><img src="https://share.weiyun.com/5FjNMwD"/></div>
+<div align=center><img src="http://a2.qpic.cn/psb?/V12GV6s7024Bqh/*ra6KAxS2a80Z.
+DcJowvvM6DZ2EY0qL*wvv0kNfJyLE!/m/dDEBAAAAAAAA&bo=NAcyBTQHMgURCT4!&rf=photolist"/></div>
 
 架构原则：易读性、易维护性、易扩展性。
