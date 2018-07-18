@@ -46,7 +46,7 @@ JsonResult.code == 1,token失效，让页面跳转到登录页等。
 
 它包含了解析数据，缓存，图像处理，文本处理，异步绘制等组件，当然也有些瑕疵下面说
 
-<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYModel" target
+<a href="https://github.com/ibireme/YYModel" target
 ="_blank" rel="nofollow">YYModel</a>— 高性能的 iOS JSON 模型框架。
 
 <a href="https://link.jianshu.com?t=https://github.com/ibireme/YYCache" target=
@@ -100,16 +100,14 @@ target="_blank" rel="nofollow">YYWebImage</a>— 这个高性能异步图像加�
 关于其他框架的选择，首先要了解他们的优缺点，本着符合自身且维护及时的宗旨去选择。
 
 ## 二、搭建目录结构 ##
-<img src="http://git.zhiqi.cn/junjie/images/raw/master
-/mulujiegou.jpeg"  width="30%"/>
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/mulujiegou.jpeg"  width="30%"/>
 
 如上图，App目录结构从下到上，使用Pods管理第三方框架，将第三方框架
 进行二次封装，供给顶层使用，尽可能减少各模块之间的耦合度，只为更清晰。
 
 ## 三、封装基础类 ##
 
-<img src="http://git.zhiqi.cn/junjie/images/raw/master/
-appDelegate.jpg"  width="30%"/>
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/appDelegate.jpg"  width="30%"/>
 
 
 1.AppDelegate是应用的代理，应用级的事件都委托它处理，为了利于阅读和维护新增了一
@@ -118,8 +116,7 @@ appDelegate.jpg"  width="30%"/>
 ***
 
 
-<img src="http://git.zhiqi.cn/junjie/images/raw/master/
-modules.png"  width="30%"/>
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/modules.png"  width="30%"/>
 
 
 2.Modules包含了应用内的功能模块，根据底部Tab栏划分并关联实体文件夹，
@@ -128,32 +125,27 @@ modules.png"  width="30%"/>
 ***
 
 
-<img src="http://git.zhiqi.cn/junjie/images/raw/master/
-manager.png"  width="30%"/>
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/manager.png"  width="30%"/>
 
 3.Manager的定义是全局基础服务，通常使用类方法或者单例来实现，主要包含对应用、
 用户的管理和服务，例如网络状态监听、用户快速登录退出操作以及登录状态的获取等。
 ***
 
-<img src="http://git.zhiqi.cn/junjie/images/raw/master/
-utils.png"  width="30%"/>
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/utils.png"  width="30%"/>
 
 
 4.Utils文件夹内主要包含全局通用工具，来源于对三方框架的二次封装，或是自己写的工
 具类。
 ***
 
-<img src="http://git.zhiqi.cn/junjie/images/raw/master/
-base.png"  width="30%"/>
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/base.png"  width="30%"/>
 
 5.Base文件夹用来存放项目的基类，基类作用包含一些定制化的内容，例如页面样式，空数
 据页面等，使用基类来实现，可以统一控制，利于维护，减少冗余，也为更清晰。
 ***
 
-<img src="http://git.zhiqi.cn/junjie/images/raw/master/
-define.png"  width="30%"/>
-<img src="http://git.zhiqi.cn/junjie/images/raw/master/
-thridParty.png"  width="30%"/>
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/define.png"  width="30%"/>
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/thridParty.png"  width="30%"/>
 
 
 6.第三方文件夹放一些第三方的类库。
