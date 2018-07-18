@@ -44,3 +44,15 @@ JsonResult.code == 1,token失效，让页面跳转到登录页等。
 <a href="https://link.jianshu.com?t=https://github.com/ibireme/YYModel" target="_blank" rel="nofollow">YYModel</a>— 高性能的 iOS JSON 模型框架。
 
 YYCache— 高性能的 iOS 缓存框架。
+
+<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYCache" target="_blank" rel="nofollow">YYCache</a>— 高性能的 iOS 缓存框架。
+<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYImage" target="_blank" rel="nofollow">YYImage</a>— 功能强大的 iOS 图像框架。
+<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYWebImage" target="_blank" rel="nofollow">YYWebImage</a>— 高性能的 iOS 异步图像加载框架。
+<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYText" target="_blank" rel="nofollow">YYText</a>— 功能强大的 iOS 富文本框架。
+<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYKeyboardManager" target="_blank" rel="nofollow">YYKeyboardManager</a>— iOS 键盘监听管理工具。
+<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYDispatchQueuePool" target="_blank" rel="nofollow">YYDispatchQueuePool</a>— iOS 全局并发队列管理工具。
+<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYAsyncLayer" target="_blank" rel="nofollow">YYAsyncLayer</a>— iOS 异步绘制与显示的工具。
+<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYCategories" target="_blank" rel="nofollow">YYCategories</a>— 功能丰富的 Category 类型工具库。
+选择这个框架的原因是功能和性能都比较强大，用一个框架就可以做很多事，而且YYKit的设计思想是category，几乎没有入侵性，使用起来也非常方便。
+
+但是同事发现<a href="https://link.jianshu.com?t=https://github.com/ibireme/YYWebImage" target="_blank" rel="nofollow">YYWebImage</a>— 这个高性能异步图像加载框架可能有点过时，因为其使用的是NSURLConnection请求，而SDWebImage已替换成了URLSession。所以图像异步加载上，我还是选择更加专业的SDWebImage。</p>
