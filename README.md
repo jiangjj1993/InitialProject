@@ -15,6 +15,6 @@
 
 ## 架构图：
 
-<div align=center><img src="https://sh-btfs-v2-yun-ftn.weiyun.com/ftn_handler/f12152e326bd3ac914d2fcf244c9df847216626179d4d1580095eae91c525d84aa739d2d185efde85825e860d2b8ccb543c2aa4e472dae86f8330b653e06752d/WechatIMG20641.jpeg?fname=WechatIMG20641.jpeg&from=30013&version=3.3.3.3&uin=879750130"/></div>
+<div align=center><img src="https://share.weiyun.com/5FjNMwD"/></div>
 
 架构原则：易读性、易维护性、易扩展性。
