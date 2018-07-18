@@ -111,8 +111,68 @@ target="_blank" rel="nofollow">YYWebImage</a>— 这个高性能异步图像加�
 
 <img src="http://git.zhiqi.cn/junjie/images/raw/master/
 appDelegate.jpg"  width="30%"/>
-AppDelegate是应用的代理，应用级的事件都委托它处理，为了利于阅读和维护新增了一
+
+
+1.AppDelegate是应用的代理，应用级的事件都委托它处理，为了利于阅读和维护新增了一
 个AppDelegate+AppService类别，用来处理生命周期之外的业务，AppDelegate作为事件入
 口，具体实现直接调用类别里的方法。
+***
+
+
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/
+modules.png"  width="30%"/>
+
+
+2.Modules包含了应用内的功能模块，根据底部Tab栏划分并关联实体文件夹，
+每个模块内使用的是MVC模式，因为标准的MVC模式会导致Controller文件代码太过于庞大
+所以我们增加Service层，用于封装Controller数据请求的代码。
+***
+
+
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/
+manager.png"  width="30%"/>
+
+3.Manager的定义是全局基础服务，通常使用类方法或者单例来实现，主要包含对应用、
+用户的管理和服务，例如网络状态监听、用户快速登录退出操作以及登录状态的获取等。
+***
+
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/
+utils.png"  width="30%"/>
+
+
+4.Utils文件夹内主要包含全局通用工具，来源于对三方框架的二次封装，或是自己写的工
+具类。
+***
+
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/
+base.png"  width="30%"/>
+
+5.Base文件夹用来存放项目的基类，基类作用包含一些定制化的内容，例如页面样式，空数
+据页面等，使用基类来实现，可以统一控制，利于维护，减少冗余，也为更清晰。
+***
+
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/
+define.png"  width="30%"/>
+<img src="http://git.zhiqi.cn/junjie/images/raw/master/
+thridParty.png"  width="30%"/>
+
+
+6.第三方文件夹放一些第三方的类库。
+
+7.全局宏顾名思义是定义了一些全局通用宏。这里定义了五个：
+
+UtilsMacros定义的是一些工具宏，比如获取屏幕宽高，系统版本，数据类型验证等；
+
+URLMacros定义服务器接口地址以及环境开关；
+
+FontAndColorMacros定义全局用的色值、字体大小，这里建议跟设计师共同维护一个设计规范，
+例如：定义一个主色调宏 MainColor，色值是 0x333333，我们全局使用MainColor宏作为背
+景颜色，当某天App改版，色值改变，我们只需要去更改 0x333333即可，其他代码不需要动
+，同时也能一定程度约束设计师，不要随便增加一种颜色，非常接近的颜色应当使用一个。
+如果设计师不愿意维护这个规范，你可以尝试打一架，打不过的话，就只能自己维护了。  
+
+ThirdMacros 包含第三方框架相关的定义，例如BuglyAppID等。  
+
+CommonMacros 定义了一些固定的字段标识，如通知的名称等。
 
 
