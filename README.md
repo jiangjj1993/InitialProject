@@ -81,3 +81,21 @@ target="_blank" rel="nofollow">YYCategories</a>— 功能丰富的 Category 类�
 target="_blank" rel="nofollow">YYWebImage</a>— 这个高性能异步图像加载框架可能有
 点过时，因为其使用的是NSURLConnection请求，而SDWebImage已替换成了URLSession。所
 以图像异步加载上，我还是选择更加专业的SDWebImage。
+
+3. 上下拉刷新框架
+
+大部分应用都会有TableView或CollectionView，上下拉刷新是比较常用的，MJRefresh提供
+的功能比较强大，支持自定义，提供样式齐全，更新及时。
+
+4. Toast提示
+
+比较主流的两款Toast提示框架可供选择，分别是 MBProgressHUD 和 SVProgressHUD，二者
+更新都比较及时，功能也都类似，根据个人习惯了，选择哪个不重要，重要的是要对其二次
+封装，让它变得更好用，框架中封装了一个MBProgressHUD+XY的category，类方法的形式调用。
+
+5. 锚点及崩溃信息
+
+该框架里我使用了腾讯出品的Bugly，功能和友盟等比起来比较单一，但胜在小巧和使用便捷,  
+`注意：去ThirdMacros.h里修改相应的AppID`
+
+关于其他框架的选择，首先要了解他们的优缺点，本着符合自身且维护及时的宗旨去选择。
