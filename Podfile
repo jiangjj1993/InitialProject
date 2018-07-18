@@ -10,4 +10,5 @@ pod 'IQKeyboardManager'
 pod 'YYKit'
 pod 'WRNavigationBar'
 pod 'Bugly'
+pod 'MGJRouter'
 end

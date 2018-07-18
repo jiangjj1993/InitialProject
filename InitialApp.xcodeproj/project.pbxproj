@@ -184,12 +184,12 @@
 			isa = PBXGroup;
 			children = (
 				03A1E94720F8933900EDA681 /* Assets.xcassets */,
-				03A1E94820F8933900EDA681 /* ViewController.m */,
+				03A1E94D20F8933900EDA681 /* Info.plist */,
 				03A1E94920F8933900EDA681 /* LaunchScreen.storyboard */,
 				03A1E94B20F8933900EDA681 /* main.m */,
 				03A1E94C20F8933900EDA681 /* PrefixHeader.pch */,
-				03A1E94D20F8933900EDA681 /* Info.plist */,
 				03A1E94E20F8933900EDA681 /* ViewController.h */,
+				03A1E94820F8933900EDA681 /* ViewController.m */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";

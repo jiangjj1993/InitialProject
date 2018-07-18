@@ -79,5 +79,4 @@
 
 //取消网络请求
 - (void)cancelRequest;
-
 @end
