@@ -99,3 +99,27 @@ target="_blank" rel="nofollow">YYWebImage</a>— 这个高性能异步图像加�
 `注意：去ThirdMacros.h里修改相应的AppID`
 
 关于其他框架的选择，首先要了解他们的优缺点，本着符合自身且维护及时的宗旨去选择。
+
+## 二、搭建目录结构
+
+<div align=center><img src="http://git.zhiqi.cn/junjie/images/raw/master
+/mulujiegou.jpeg"  width="30%"/>
+            目录图解
+</div>
+
+如上图，App目录结构从下到上，使用Pods管理第三方框架，将第三方框架
+进行二次封装，供给顶层使用，尽可能减少各模块之间的耦合度，只为更清晰。
+
+
+## 三、封装基础类
+
+<div align=center><img src="http://git.zhiqi.cn/junjie/images/raw/master/
+appDelegate.jpg"  width="30%"/>
+            1.应用入口
+</div>
+
+AppDelegate是应用的代理，应用级的事件都委托它处理，为了利于阅读和维护新增了一
+个AppDelegate+AppService类别，用来处理生命周期之外的业务，AppDelegate作为事件入
+口，具体实现直接调用类别里的方法。
+
+
