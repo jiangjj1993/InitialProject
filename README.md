@@ -15,6 +15,6 @@
 
 ## 架构图：
 
-<div align=center><img src="WechatIMG20641.jpeg"/></div>
+<div align=center><img src="http://git.zhiqi.cn/junjie/images/raw/e4a4c419f04d45ff916829e974ad9871f3187456/WechatIMG20641.jpeg"/></div>
 
 架构原则：易读性、易维护性、易扩展性。
