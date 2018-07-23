@@ -15,15 +15,15 @@
 #import "FontAndColorMacros.h"
 #import "CommonMacros.h"
 #import "ThirdMacros.h"
+
 //基础类
 #import "AppDelegate.h"
 #import "AppDelegate+AppService.h"
 #import "RootViewController.h"
-//#import "RootNavigationController.h"
-//#import "MBProgressHUD+XY.h"
-//#import "AppManager.h"
-//#import "ShareManager.h"
-//#import "UserManager.h"
+#import "RootNavigationController.h"
+#import "MBProgressHUD+XY.h"
+#import "UserManager.h"
+#import "HttpsManager.h"
 //#import "UIButton+XYButton.h"
 
 //第三方

@@ -13,6 +13,8 @@
 //登录状态改变通知
 #define KNotificationLoginStateChange @"loginStateChange"
 
+//用户model缓存
+#define KUserModelCache @"KUserModelCache"
 
 
 #pragma mark - ——————— 网络状态相关 ————————

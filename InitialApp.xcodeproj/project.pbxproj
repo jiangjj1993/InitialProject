@@ -26,6 +26,9 @@
 		03A1E97520FC834C00EDA681 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A1E97420FC834C00EDA681 /* RootNavigationController.m */; };
 		03A1E97B20FC8C0400EDA681 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A1E97A20FC8C0400EDA681 /* UserManager.m */; };
 		03A1E97E20FC8C3300EDA681 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A1E97D20FC8C3300EDA681 /* UserInfo.m */; };
+		03A1E9882105697900EDA681 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A1E9862105697900EDA681 /* MainTabBarController.m */; };
+		03A1E98D2105698000EDA681 /* UITabBar+CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A1E98A2105697F00EDA681 /* UITabBar+CustomBadge.m */; };
+		03A1E98E2105698000EDA681 /* XYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A1E98C2105697F00EDA681 /* XYTabBar.m */; };
 		DF55AB96BBF5FF7BCFE7DB05 /* libPods-InitialApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 094BEB720F1202BB80AF20F1 /* libPods-InitialApp.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +76,12 @@
 		03A1E97A20FC8C0400EDA681 /* UserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
 		03A1E97C20FC8C3300EDA681 /* UserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
 		03A1E97D20FC8C3300EDA681 /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		03A1E9862105697900EDA681 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		03A1E9872105697900EDA681 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		03A1E9892105697F00EDA681 /* XYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTabBar.h; sourceTree = "<group>"; };
+		03A1E98A2105697F00EDA681 /* UITabBar+CustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+CustomBadge.m"; sourceTree = "<group>"; };
+		03A1E98B2105697F00EDA681 /* UITabBar+CustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+CustomBadge.h"; sourceTree = "<group>"; };
+		03A1E98C2105697F00EDA681 /* XYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTabBar.m; sourceTree = "<group>"; };
 		094BEB720F1202BB80AF20F1 /* libPods-InitialApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InitialApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1EF499CCDF8831FCAFDF95 /* Pods-InitialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InitialApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InitialApp/Pods-InitialApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E4DE9CFC29FE45A8E329725D /* Pods-InitialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InitialApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-InitialApp/Pods-InitialApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -219,6 +228,7 @@
 		03A1E96B20FC40C000EDA681 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				03A1E9842105691C00EDA681 /* TabBarController */,
 				03A1E97220FC830400EDA681 /* RootNavigationController */,
 				03A1E96C20FC417600EDA681 /* RootViewController */,
 			);
@@ -246,16 +256,21 @@
 		03A1E97620FC8B3300EDA681 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				03A1E97720FC8BC400EDA681 /* New Group */,
+				03A1E97720FC8BC400EDA681 /* Home(首页) */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		03A1E97720FC8BC400EDA681 /* New Group */ = {
+		03A1E97720FC8BC400EDA681 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				03A1E98020FF37F200EDA681 /* Controller */,
+				03A1E98120FF37F200EDA681 /* Model */,
+				03A1E98320FF37F300EDA681 /* Resource */,
+				03A1E97F20FF37F200EDA681 /* Service */,
+				03A1E98220FF37F200EDA681 /* View */,
 			);
-			path = "New Group";
+			path = "Home(首页)";
 			sourceTree = "<group>";
 		};
 		03A1E97820FC8BCE00EDA681 /* Manager */ = {
@@ -267,6 +282,62 @@
 				03A1E97D20FC8C3300EDA681 /* UserInfo.m */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		03A1E97F20FF37F200EDA681 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		03A1E98020FF37F200EDA681 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		03A1E98120FF37F200EDA681 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03A1E98220FF37F200EDA681 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03A1E98320FF37F300EDA681 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		03A1E9842105691C00EDA681 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				03A1E9872105697900EDA681 /* MainTabBarController.h */,
+				03A1E9862105697900EDA681 /* MainTabBarController.m */,
+				03A1E9852105694A00EDA681 /* TabBarView */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		03A1E9852105694A00EDA681 /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				03A1E98B2105697F00EDA681 /* UITabBar+CustomBadge.h */,
+				03A1E98A2105697F00EDA681 /* UITabBar+CustomBadge.m */,
+				03A1E9892105697F00EDA681 /* XYTabBar.h */,
+				03A1E98C2105697F00EDA681 /* XYTabBar.m */,
+			);
+			path = TabBarView;
 			sourceTree = "<group>";
 		};
 		CAF1B3A81690A2A0454EAD3C /* Frameworks */ = {
@@ -414,7 +485,9 @@
 			files = (
 				03A1E95E20F8933900EDA681 /* ViewController.m in Sources */,
 				03A1E97E20FC8C3300EDA681 /* UserInfo.m in Sources */,
+				03A1E9882105697900EDA681 /* MainTabBarController.m in Sources */,
 				03A1E95720F8933900EDA681 /* UIButton+PassValue.m in Sources */,
+				03A1E98D2105698000EDA681 /* UITabBar+CustomBadge.m in Sources */,
 				03A1E97B20FC8C0400EDA681 /* UserManager.m in Sources */,
 				03A1E96A20F8A7E600EDA681 /* PPNetworkHelper.m in Sources */,
 				03A1E95A20F8933900EDA681 /* JsonResult.m in Sources */,
@@ -424,6 +497,7 @@
 				03A1E96220F8933900EDA681 /* AppDelegate.m in Sources */,
 				03A1E96F20FC41B300EDA681 /* RootViewController.m in Sources */,
 				03A1E95420F8933900EDA681 /* Tool.m in Sources */,
+				03A1E98E2105698000EDA681 /* XYTabBar.m in Sources */,
 				03A1E95920F8933900EDA681 /* HttpsManager.m in Sources */,
 				03A1E96020F8933900EDA681 /* main.m in Sources */,
 				03A1E95820F8933900EDA681 /* UIViewController+AlertViewAndActionSheet.m in Sources */,

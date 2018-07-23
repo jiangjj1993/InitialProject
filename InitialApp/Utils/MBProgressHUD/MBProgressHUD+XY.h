@@ -36,8 +36,9 @@
 + (void)showCustomIconInView:(NSString *)iconName message:(NSString *)message;
 
 
-+ (void)hideHUD:(NSMutableArray *)huds;
++ (void)hideHUD;
 
++ (void)hideAllHUD:(NSMutableArray *)huds;
 //顶部弹出提示
 + (void)showTopTipMessage:(NSString *)msg;
 + (void)showTopTipMessage:(NSString *)msg isWindow:(BOOL) isWindow;

@@ -20,9 +20,9 @@ const NSInteger hideTime = 2;
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     // 隐藏时候从父控件中移除
     hud.removeFromSuperViewOnHide = YES;
-    // YES代表需要蒙版效果
-//    hud.dimBackground = YES;
+    hud.bezelView.color = [UIColor blackColor];
     hud.label.text = message?message:@"加载中...";
+    hud.userInteractionEnabled = NO;
 //    hud.labelText=message?message:@"加载中..."; 属性废弃
     return hud;
     
@@ -116,7 +116,13 @@ const NSInteger hideTime = 2;
     [hud hideAnimated:YES afterDelay:hideTime];
 }
 
-+ (void)hideHUD:(NSMutableArray*)huds
+
++ (void)hideHUD{
+    //将window上的隐藏掉
+    [self hideHUDForView:nil];
+}
+
++ (void)hideAllHUD:(NSMutableArray*)huds
 {
     for (MBProgressHUD *hud in huds) {
         hud.removeFromSuperViewOnHide = YES;
