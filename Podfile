@@ -11,4 +11,5 @@ pod 'YYKit'
 pod 'WRNavigationBar'
 pod 'Bugly'
 pod 'MGJRouter'
+pod 'NSUserDefaultsModel'
 end

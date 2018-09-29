@@ -20,5 +20,5 @@
 @property (nonatomic,copy) NSString *departId;  //--部门ID
 @property (nonatomic,copy) NSString *depart;  //--部门简称
 @property (nonatomic,copy) NSString *roleFlag;  //-- 0是司机；1-普通业务人员
-@property (strong, nonatomic) NSString *userId;//买方联系人ID
+@property (nonatomic,copy) NSString *userId;//买方联系人ID
 @end

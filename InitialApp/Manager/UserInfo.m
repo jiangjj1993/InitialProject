@@ -9,6 +9,17 @@
 #import "UserInfo.h"
 
 @implementation UserInfo
+//@dynamic code;
+//@dynamic wechat;
+//@dynamic name;
+//@dynamic phone;
+//@dynamic headUrl;
+//@dynamic jobNumber;
+//@dynamic companyId;
+//@dynamic company;
+//@dynamic departId;
+//@dynamic depart;
+
 - (void)encodeWithCoder:(nonnull NSCoder *)aCoder {
     [aCoder encodeObject:self.code forKey:@"code"];
     [aCoder encodeObject:self.wechat forKey:@"wechat"];
@@ -39,4 +50,6 @@
     self.userId = [aDecoder decodeObjectForKey:@"userId"];
     return self;
 }
+
+
 @end

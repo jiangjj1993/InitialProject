@@ -36,4 +36,5 @@
 #import <MJRefresh.h>
 #import <Bugly/Bugly.h>
 #import <WRNavigationBar.h>
+#import <NSUserDefaultsModel.h>
 #endif /* PrefixHeader_pch */
